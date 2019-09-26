@@ -1,0 +1,363 @@
+@charset "utf-8";
+/* CSS Document */
+
+	.header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.19);
+}
+/*several banners with different backgroud images*/
+	.banner1{
+	padding-bottom: 80px;
+	padding-top: 10px;
+	min-height: 100px;
+	background: url("../images/459184560341862244.jpg")no-repeat 0px 0px;
+	background-size:cover;
+	position: relative;
+}
+	.banner2{
+	padding-bottom: 80px;
+	padding-top: 10px;
+	min-height: 700px;
+	background: url( "../images/817613999016123058.jpg")no-repeat 0px 0px;
+	background-size:cover;
+	position: relative;
+}
+	.banner3{
+	padding-bottom: 80px;
+	padding-top: 10px;
+	min-height: 700px;
+	background: url( "../images/488341944667888553.jpg")no-repeat 0px 0px;
+	background-size:cover;
+	position: relative;
+}
+	.banner3-product{
+	dislplay:inline-block;	
+	padding-bottom: 80px;
+	padding-top: 10px;
+	min-height: 700px;
+	background: url( "../images/488341944667888553.jpg")no-repeat 0px 0px;
+	background-size:cover;
+	position: relative;
+}
+	.banner3-company{
+	padding-bottom: 80px;
+	padding-top: 10px;
+	min-height: 100px;
+	background-color: white;
+	background-size:cover;
+	position: relative;
+}
+	.banner4{
+	padding-bottom: 10px;
+	padding-top: 10px;
+	min-height: 10px;
+	color: white;
+	background: black;
+	background-size:cover;
+	position: relative;
+}
+	.banner5{
+	padding-bottom: 80px;
+	padding-top: 10px;
+	min-height: 700px;
+	background-color: antiquewhite;
+	background-size:cover;
+	position: relative;
+}
+/*product search*/
+.banner8{
+	padding-bottom: 80px;
+	padding-top: 10px;
+	min-height: 1100px;
+	background-color: antiquewhite;
+	background-size:cover;
+	position: relative;
+}
+/*personal information*/
+.banner9{
+	text-align:center;
+	padding-top: 110px;
+	padding-bottom: 30px;
+	height: 400px;
+	background-color: antiquewhite;
+	background-size:cover;
+}
+.bannerProduct{
+	padding-bottom: 100px;
+	padding-top: 10px;
+	min-height: 100px;
+	background:url( "../images/459184560341862244.jpg")no-repeat 0px 0px;
+	background-size:cover;
+	position: relative;
+}
+.banner6{
+	padding-bottom: 80px;
+	padding-top: 10px;
+	min-height: 700px;
+	background: url( "file:///D:/mode/modify/images/company1_20190708110342.jpg")no-repeat 0px 0px;
+	background-size:cover;
+	position: relative;
+}
+.banner7{
+	padding-bottom: 80px;
+	padding-top: 10px;
+	min-height: 700px;
+	background: url("../images/a.jpg")no-repeat 0px 0px;
+	background-size:cover;
+	position: relative;
+}
+:
+.banner7 p{
+	text-align: center;
+	padding-bottom: 80px;
+	padding-top: 10px;
+	 font-size: 2em;
+    line-height: 1.2em;
+   font-family: "Helvetica Neue";
+}
+/*center*/
+	.container {
+  	padding-right: 15px;
+  	padding-left: 15px;
+  	margin-right: auto;
+  	margin-left: auto;
+}
+/*first kind of content in the banner(center)*/
+	.banner-text1 {
+    width: 50%;
+    text-align: right;
+    margin-top: 12%;
+}
+	.banner-text1  h2 {
+    font-size: 2.5em;
+    color: #fff;
+    line-height: 1.8em;
+    letter-spacing: 2px;
+}
+	.banner-text1 a {
+    font-size: 1.1em;
+    color: rgb(255, 255, 255);
+    padding: 0.7em 3em;
+    display: inline-block;
+    border: 2px solid #99ABD5;
+    border-radius: 7px;
+    margin-top: 2em;
+}
+/*right*/
+	.banner-text2 {
+    width: 100%;
+    text-align: right;
+    margin-top: 12%;
+}
+	.banner-text2  h2 {
+    font-size: 2.5em;
+    color: #fff;
+    line-height: 1.8em;
+    letter-spacing: 2px;
+}
+	.banner-text2 a {
+    font-size: 1.1em;
+    color: rgb(255, 255, 255);
+    padding: 0.7em 3em;
+    display: inline-block;
+    border: 2px solid #99ABD5;
+    border-radius: 7px;
+    margin-top: 2em;
+}
+/*just change the color of text (center)*/
+	.banner-text3 {
+    width: 50%;
+    text-align: right;
+    margin-top: 12%;
+}
+	.banner-text3  h2 {
+    font-size: 2.5em;
+    color: black;
+    line-height: 1.8em;
+    letter-spacing: 2px;
+}
+	.banner-text3 a {
+    font-size: 1.1em;
+    color: black;
+    padding: 0.7em 3em;
+    display: inline-block;
+    border: 2px solid #99ABD5;
+    border-radius: 7px;
+    margin-top: 2em;
+}
+/*the brief summary of detailed description for product*/
+	.banner-text4 {
+    margin-left: 30%;
+    text-align: left;
+    margin-top: 2%;
+}
+	.banner-text4  h2 {
+    font-size: 2.5em;
+    color: black;
+    line-height: 1.8em;
+    letter-spacing: 2px;
+}
+	.banner-text4 a {
+    font-size: 1.1em;
+    color: black;
+    padding: 0.7em 3em;
+    display: inline-block;
+    border: 2px solid #99ABD5;
+    border-radius: 7px;
+    margin-top: 2em;
+}
+.banner-text6 {
+    width: 50%;
+    text-align: right;
+    margin-top: 15%;
+}
+	.banner-text6  h2 {
+    font-size: 2.5em;
+    color: black;
+    line-height: 1.8em;
+    letter-spacing: 2px;
+}
+/*for the summary of the product in the index*/
+.banner-text7 {
+    width: 100%;
+    text-align: right;
+    margin-top: 12%;
+}
+	.banner-text7  h2 {
+    font-size: 2.5em;
+    color: black;
+    line-height: 1.8em;
+    letter-spacing: 2px;
+}
+.banner-text7 a {
+    font-size: 1.1em;
+    color: black;
+    padding: 0.7em 3em;
+    display: inline-block;
+    border: 2px solid #99ABD5;
+    border-radius: 7px;
+    margin-top: 2em;
+}
+	.banner3-company>.banner-text5 {
+  	
+    text-align: right;
+    margin-top: 12%;
+	display: inline-block;
+	position: relative;
+	width: 50%;
+	font-size: 2.5em;
+    color: black;
+    line-height: 1.8em;
+    letter-spacing: 2px;
+}
+	
+.banner3-company>.banner-text5-image{
+	display: inline-block;
+	position: absolute;
+	width: 50%;
+	height: 40%;
+	padding-top:5%;
+}
+.banner8>.right>.banner-productSearch-text{
+	width: 23%;
+	line-height: 200%;
+	border-style:solid;
+	border-color:#916B9C;
+	display: inline-block;
+	padding:20px;
+	margin:5%;
+}
+.banner8>.left{
+	width: 10%;
+	float:left;
+	display: inline;
+	margin-top: 4%;
+}
+.banner8>.right{
+	float:left;
+	height: 1000px;
+	width: 90%;
+	display:inline;
+}
+.banner8>.left>.ordering{
+	width:120px;
+	height:350px;
+	line-height:30px; 
+	border:2px solid #ccc;
+}
+.personalInformation{
+	border-color:#4B859E;
+	margin-left: 40%;
+	min-width: 10px;
+    text-align: left;
+    margin-top: 2%;
+	font-size: 20px;
+	font-family:cabin;
+}
+.center1{
+	margin: 0 auto;
+	width:100px;
+	height: 10px;
+}
+.container2 {
+	padding-top: 50px;
+  	padding-right: 15px;
+  	padding-left: 15px;
+  	margin-right: auto;
+  	margin-left: auto;
+	font-size: 2.5em;
+    color: black;
+    line-height: 50px;
+}
+.procuctLeft{
+	width: 50%;
+    text-align: right;
+	display:inline-block;
+}
+.productLeft{
+	float:left; 
+	padding-left: 20%;
+	width:50%;
+	display:inline;
+	margin-top:0;
+	margin-left:5px;
+}
+.productLeft2{
+	float:left; 
+	padding-left: 20%;
+	width:50%;
+	display:inline;
+	margin-top:5%;
+	margin-left:5px;
+}
+.productRight{
+	padding-left: 10%;
+	display:inline-block;
+}
+.productRight1{
+	float:left; 
+	display:inline; 
+	margin-top:20; 
+	margin-left:5px;
+}
+.productRight2{
+	padding-top: 2%;
+	padding-left: 10%;
+	text-align: right;
+	display:inline-block;
+}
+.procuctLeftOrigin{
+	padding-left: 30%;
+	float:left;
+}
+.productRightOrigin{
+	float:right;
+}
+.banner-productSearch-text2{
+	width: 20%;
+	line-height: 200%;
+	border-style:solid;
+	border-color:#916B9C;
+	display: inline-block;
+	padding:20px;
+	margin:5%;
+}

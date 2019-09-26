@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+.banner{
+	padding-bottom: 80px;
+	padding-top: 10px;
+	min-height: 700px;
+	background:url( "../images/千与千寻11 (4).jpg")no-repeat 0px 0px;
+	background-size:cover;
+	position: relative;
+}
+.header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.19);
+}
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.navbar-default {
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
+}
+@media (min-width: 768px) {
+  .navbar-header {
+    float: left;
+  }
+}

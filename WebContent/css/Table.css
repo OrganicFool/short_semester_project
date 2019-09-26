@@ -1,0 +1,33 @@
+@charset "utf-8";
+ 
+table
+{
+	width: 100%;                                        /*表格占据整个页面*/
+	border-spacing: 100px;                                  /*单元格边框间距为0*/
+	box-shadow: 0 1px 1px #ccc;                         /*设置表格外边框阴影,有立体感*/
+}
+sheet{
+	border:solid #ccc 10px;                              /*设置表格外边框*/
+	border-radius: 10px;   							  /*设置表格外边框圆角*/
+}
+
+.sheet td,.sheet th
+{
+	border:solid #ccc 2px;                       
+	border-bottom: solid #ccc 1px;
+	padding: 10px;                                      /*设置单元格内边距，单元格内容显得不拥挤*/
+	text-align: center;                                 /*单元格内容居中*/
+}
+ .sheet tr:hover
+{
+	background: #fbf8e9;
+}
+.productType{
+	font-family:'Audiowide-Regular';
+	width: 10%;
+}
+.productData{
+	font-family:'Audiowide-Regular';
+	width: 10%;
+}
+

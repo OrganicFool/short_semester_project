@@ -1,0 +1,88 @@
+@charset "utf-8";
+/* CSS Document */
+.fr {
+    float: right;
+}
+.foot {
+    margin-top: 10px;
+    color: #212121;
+    height: 48px;
+    border: 1px solid #c8c8c8;
+    background-color: #eaeaea;
+    background-image:linear-gradient(RGB(241,241,241),RGB(226,226,226));
+    position: relative;
+    z-index: 8;
+}
+.foot div, .foot a {
+    line-height: 48px;
+    height: 48px;
+}
+.foot .select-all {
+    width: 100px;
+    height: 48px;
+    line-height: 48px;
+    padding-left: 5px;
+    color: #666;
+}
+.foot .closing {
+    border-left: 1px solid #c8c8c8;
+    width: 100px;
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+    background: RGB(238,238,238);
+    cursor: pointer;
+}
+.foot .total{
+    margin: 0 20px;
+    cursor: pointer;
+}
+.foot  #priceTotal, .foot #selectedTotal {
+    color: red;
+    font-family: "Microsoft Yahei";
+    font-weight: bold;
+}
+.foot .selected {
+    cursor: pointer;
+}
+.foot .selected .arrow {
+    position: relative;
+    top:-3px;
+    margin-left: 3px;
+}
+.foot .selected .down {
+    position: relative;
+    top:3px;
+    display: none;
+}
+.foot .selected:hover .arrow {
+    color: red;
+}
+.foot .selected-view {
+    width: 935px;
+    border: 1px solid #c8c8c8;
+    position: absolute;
+    height: auto;
+    background: #ffffff;
+    z-index: 9;
+    bottom: 48px;
+    left: -1px;
+    display:none;
+}
+.foot .selected-view div{
+    height: auto;
+}
+.foot .selected-view .arrow {
+    font-size: 16px;
+    line-height: 100%;
+    color:#c8c8c8;
+    position: absolute;
+    right: 330px;
+    bottom: -9px;
+}
+.foot .selected-view .arrow span {
+    color: #ffffff;
+    position: absolute;
+    left: 0px;
+    bottom: 1px;
+}
