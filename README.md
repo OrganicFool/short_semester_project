@@ -14,6 +14,6 @@
   项目里包含了一份sql文件
   
  推荐系统：
-  项目里面的statistic已经存好了一组每个商品对应的vector，过几天会上传一个Jupyter，用来训练协同过滤部分的模型，并生成新的vector。
+  项目里面的statistic已经存好了一组每个商品对应的vector，项目里面自带一个Jupyter，用来训练协同过滤部分的模型，并生成新的vector（python版本的问题请访问https://github.com/damnever/pigar）。
   
 
