@@ -7,10 +7,10 @@ import java.util.Properties;
  
 public class Connecter implements AutoCloseable {
 	Connection conn = null;
-	private final String URL = "jdbc:mysql://localhost:3306/website";
+	private final String URL = "";
 	public Connecter() {
-        String user="root";
-        String password="XIA!1HAN!2DONG!3";
+        String user="";
+        String password="";
         Properties p=new Properties();
         p.setProperty("user",user);
         p.setProperty("password",password);
@@ -24,18 +24,18 @@ public class Connecter implements AutoCloseable {
             PreparedStatement stmt = conn.prepareStatement(sql_statment);
             boolean result = stmt.execute(sql_statment);
             if (!result) {
-				System.out.println("²Ù×÷´íÎó");
+				System.out.println("æ“ä½œé”™è¯¯");
 			}
             else {
-				System.out.println("²Ù×÷ÕıÈ·");
+				System.out.println("æ“ä½œæ­£ç¡®");
 			}
             stmt.close();
         }
         catch (SQLException e) {
-            System.out.println("MySQL´íÎó");
+            System.out.println("MySQLé”™è¯¯");
             e.printStackTrace();
         } catch (ClassNotFoundException e) {
-        	System.out.println("»·¾³Ã»×°¶Ô");
+        	System.out.println("ç¯å¢ƒæ²¡è£…å¯¹");
             e.printStackTrace();
         } 
 	}
@@ -44,12 +44,12 @@ public class Connecter implements AutoCloseable {
 			ArrayList<Map<String,Object>> list=new ArrayList<Map<String, Object>>();
 			PreparedStatement stmt = conn.prepareStatement(statment);
 			ResultSet rs = stmt.executeQuery();
-			ResultSetMetaData md = rs.getMetaData();//»ñÈ¡¼üÃû
-			int columnCount = md.getColumnCount();//»ñÈ¡ĞĞµÄÊıÁ¿
+			ResultSetMetaData md = rs.getMetaData();//è·å–é”®å
+			int columnCount = md.getColumnCount();//è·å–è¡Œçš„æ•°é‡
 			while (rs.next()) {
-			Map<String, Object> rowData = new HashMap<String, Object>();//ÉùÃ÷Map
+			Map<String, Object> rowData = new HashMap<String, Object>();//å£°æ˜Map
 			for (int i = 1; i <= columnCount; i++) {
-			rowData.put(md.getColumnName(i), rs.getObject(i));//»ñÈ¡¼üÃû¼°Öµ
+			rowData.put(md.getColumnName(i), rs.getObject(i));//è·å–é”®ååŠå€¼
 			}
 			list.add(rowData);
 			}
@@ -58,7 +58,7 @@ public class Connecter implements AutoCloseable {
 			System.out.println("query correct");
 			return list;
 		} catch (Exception e) {
-			System.out.println("query´íÎó");
+			System.out.println("queryé”™è¯¯");
 			return null;
 		}
 	}
