@@ -1,19 +1,43 @@
-# 2019-09-26
-一个写的巨垃圾的小学期，主要基于Servlet和JSP，少部分地方使用了ajax。
-核心页面包括了登陆，注册，商品筛选，商品详情，购物车，下单以及历史信息
- 
- 版本信息部分：
-  Java版本：1.8.0_201
-  tomcat：开发用的是9.0，建议越新越好
-  Gson：2.8.2
-  mysql-connecter：8.0.16
-  protobuf：3.7.1
-  
- 数据库：
-  数据库的url和密码等信息请在Connecter里面自行修改
-  项目里包含了一份sql文件
-  
- 推荐系统：
-  项目里面的statistic已经存好了一组每个商品对应的vector，项目里面自带一个Jupyter，用来训练协同过滤部分的模型，并生成新的vector（python版本的问题请访问https://github.com/damnever/pigar）。
-  
+# AntiBupt
+Beijing University of Posts and Telecommunications International College e-commerce and law short semester project
 
+# Way to Use
+Small website for shopping including server and database
+
+step 1
+download the project to your eclipse and Name as MecDog
+
+step 2
+load the sql file to your mysql. The database should name as "website"
+
+step 3
+
+Configure the tomcat server for the project in eclipse.(larger than 9.0)
+
+step 4
+The external jar package (mysql-connecter, Gson, protubuf) that the project needs to use is in lib. If the version is wrong, please look for the corresponding version on maven.
+
+step 5
+Connect to http://localhost:8080/MecDog to visit your website.
+
+# technical details
+# front end
+The design is relatively simple, completely using the native javascript and jquery splicing interface
+
+Front-end framework uses bootstrap
+
+The paging plugin uses bootstrap-paginator
+
+# backend
+Implementing RESTful APIs with native java servlets
+
+Implementing Serialization via Gson
+
+Database connected via  mysql-connector-java and commons-dbutils-1.7
+
+# Management and maintenance
+the description and photo of each commodity are save in /text and /WebContent/img.
+if you want to add a commodity in your website, just add a picture with the same name of the commodity and a txt file with the same name of the commodity after change your database.
+Deleting is in the same way.
+# Recommendation system
+There is a Jupyter notebook in the project. When you think that the website has experienced such an increase in the number of transactions that you need to update the recommendation system (our vectorized recommend system is based on history) or your product list changed(it's important!!!), run the jupyter notebook and copy the txt file(vector.txt) to the directory "/build/classes/statistic" and cover the original file.
